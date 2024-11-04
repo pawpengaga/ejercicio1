@@ -63,7 +63,7 @@ public class Tarea {
       " }";
   }
 
-
+  // Esto debe ir en una clase servicio luego...
   public void finalizarTarea(){
     
     if(this.estaFinalizada == true){
