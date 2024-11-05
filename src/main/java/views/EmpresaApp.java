@@ -56,6 +56,7 @@ public class EmpresaApp {
   // Salir
   public static void salir(){
     System.out.println("Saliendo...");
+    salirMenu = true;
   }
   
   // UTIL
@@ -87,9 +88,16 @@ public class EmpresaApp {
       System.out.println("Ingrese una opción...");
       int opcion = myscan.nextInt();
 
-      // switch (opcion) {
-      //   case 1 -> 
-      // }
+      switch (opcion) {
+        case 1 -> agregarEmpleados();
+        case 2 -> crearProyecto();
+        case 3 -> crearTareas();
+        case 4 -> verEmpleados();
+        case 5 -> verProyectos();
+        case 6 -> generarReporte();
+        case 7 -> salir();
+        default -> System.out.println("Ingrese una opción valida...");
+      }
 
 
     } while (!salirMenu);
