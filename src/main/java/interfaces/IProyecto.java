@@ -12,5 +12,4 @@ public interface IProyecto {
   public void actualizarProyecto(Proyecto proyecto);
   public void eliminarProyecto(long idProyecto);
 
-
 }
