@@ -18,6 +18,21 @@ public class EmpresaAppPrototype {
 
   }
 
+  /*
+   *  Estructura
+   * 1. Agregar Empleados
+   * 2. Crear proyecto 
+   *  2.1 Seleccione empleados para un equipo
+   *  2.2 Agregar nuevo empleado desde aqui
+   * 3. Crear tareas
+   *  3.1 Seleccione un proyecto al que agregar tareas
+   * 4. Despedir Empleados
+   * 5. Eliminar tareas
+   * 6. Finiquitar Proyectos
+   * 7. SALIR
+   *
+   */
+
   public static <T> void listarServicios(Collection<T> servicio_in){
     servicio_in.forEach(System.out::println);
   }

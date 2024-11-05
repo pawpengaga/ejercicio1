@@ -6,13 +6,12 @@ import java.util.List;
 public class Proyecto {
 
   // Clase final de la que dependen mas elementos
-
+  
   private long idProyecto;
   private String nombreProyecto;
   private List<Empleado> equipoAsignado = new ArrayList<>();
   private List<Tarea> tareas;
   // El proyecto en el futuro deberia tener tambien estado de finalizacion...
-
 
   public Proyecto(long idProyecto, String nombreProyecto, List<Empleado> equipoAsignado) {
     // Las tareas se añaden despues, el equipo es definido desde el inicio, nadie entra, nadie sale
