@@ -3,6 +3,7 @@ package views;
 import java.util.Collection;
 import java.util.Scanner;
 
+import models.Empleado;
 import services.EmpleadoService;
 import services.ProyectoService;
 import services.TareaService;
@@ -21,7 +22,19 @@ public class EmpresaApp {
 
   // Agregar empleados
   public static void agregarEmpleados(){
+    System.out.println();
+    
+    System.out.println("Ingrese un RUT para el empleado...");
+    String RutInput = myscan.nextLine();
+    System.out.println("Ingrese un nombre para el empleado");
+    String nombreInput = myscan.nextLine();
+
+
+    System.out.println();
     System.out.println("Agregando empleado...");
+    Empleado empleadoInput = new Empleado(RutInput, nombreInput);
+    empleadoService.nuevoEmpleado(empleadoInput);
+    System.out.println();
   }
 
   // Crear proyecto
@@ -36,7 +49,10 @@ public class EmpresaApp {
 
   // Ver empleados
   public static void verEmpleados(){
+    System.out.println();
     System.out.println("Listando empleados...");
+    listarServicios(empleadoService.listarEmpleados());
+    System.out.println();
   }
 
   // Ver proyectos
@@ -87,6 +103,7 @@ public class EmpresaApp {
       System.out.println();
       System.out.println("Ingrese una opción...");
       int opcion = myscan.nextInt();
+      myscan.nextLine();
 
       switch (opcion) {
         case 1 -> agregarEmpleados();

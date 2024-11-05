@@ -7,18 +7,20 @@ public class Tarea {
   private long codTarea;
   private String descripcionTarea;
   private Empleado empleadoAsignado;
+  private Proyecto proyectoPerteneciente;
   private boolean estaFinalizada;
 
 
-  public Tarea(long codTarea, String descripcionTarea, Empleado empleadoAsignado) {
+  public Tarea(long codTarea, String descripcionTarea, Empleado empleadoAsignado, Proyecto proyectoPerteneciente) {
     this.codTarea = codTarea;
     this.descripcionTarea = descripcionTarea;
     this.empleadoAsignado = empleadoAsignado;
+    this.proyectoPerteneciente = proyectoPerteneciente;
     this.estaFinalizada = false; // Una vez creada la tarea siempre parte como no finalizada
   }
 
   public long getCodTarea() {
-    return codTarea;
+    return this.codTarea;
   }
 
   public void setCodTarea(long codTarea) {
@@ -26,7 +28,7 @@ public class Tarea {
   }
 
   public String getDescripcionTarea() {
-    return descripcionTarea;
+    return this.descripcionTarea;
   }
 
   public void setDescripcionTarea(String descripcionTarea) {
@@ -34,7 +36,7 @@ public class Tarea {
   }
 
   public Empleado getEmpleadoAsignado() {
-    return empleadoAsignado;
+    return this.empleadoAsignado;
   }
 
   public void setEmpleadoAsignado(Empleado empleadoAsignado) {
@@ -42,13 +44,24 @@ public class Tarea {
   }
 
   public boolean isEstaFinalizada() {
-    return estaFinalizada;
+    return this.estaFinalizada;
+  }
+
+  public boolean getEstaFinalizada() {
+    return this.estaFinalizada;
   }
 
   public void setEstaFinalizada(boolean estaFinalizada) {
     this.estaFinalizada = estaFinalizada;
   }
 
+  public Proyecto getProyectoPerteneciente() {
+    return proyectoPerteneciente;
+  }
+
+  public void setProyectoPerteneciente(Proyecto proyectoPerteneciente) {
+    this.proyectoPerteneciente = proyectoPerteneciente;
+  }
 
   @Override
   public String toString() {
@@ -59,6 +72,7 @@ public class Tarea {
       " codTarea='" + getCodTarea() + "'" +
       ", descripcionTarea='" + getDescripcionTarea() + "'" +
       ", empleadoAsignado='" + getEmpleadoAsignado() + "'" +
+      ", proyectoPerteneciente='" + getProyectoPerteneciente() + "'" +
       ", estaFinalizada='" + statusMessage + "'" +
       " }";
   }
