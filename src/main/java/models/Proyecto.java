@@ -11,6 +11,7 @@ public class Proyecto {
   private String nombreProyecto;
   private List<Empleado> equipoAsignado = new ArrayList<>();
   private List<Tarea> tareas;
+  // El proyecto en el futuro deberia tener tambien estado de finalizacion...
 
 
   public Proyecto(long idProyecto, String nombreProyecto, List<Empleado> equipoAsignado) {
