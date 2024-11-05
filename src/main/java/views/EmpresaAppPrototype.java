@@ -28,10 +28,10 @@ public class EmpresaAppPrototype {
    *  3.1 Seleccione un proyecto al que agregar tareas
    * 4. Ver empleados
    * 5. Ver Proyectos
-   * 6. Despedir Empleados
-   * 7. Eliminar tareas
-   *  7.1 Seleccione el proyecto del que quiere eliminar tareas
-   * 8. Finiquitar Proyectos
+   * 6. Despedir Empleados                                        ######### PENDIENDE ##########
+   * 7. Eliminar tareas                                           ######### PENDIENDE ##########
+   *  7.1 Seleccione el proyecto del que quiere eliminar tareas   ######### PENDIENDE ##########
+   * 8. Finiquitar Proyectos                                      ######### PENDIENDE ##########
    * 9. Generar Reporte
    * 10. SALIR
    *
