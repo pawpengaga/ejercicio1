@@ -48,3 +48,9 @@ Ejemplo de implementacion para escribir el archivo `CSV` requerido. Es un archiv
 ![Captura1](captura7.png)
 
 > Librerías específicas para CSV no son requeridas
+
+<hr />
+
+## Dudas resueltas
+
+- Se trabaja directamente a la hora de comparar objetos completos valiendose del metodo `.equals`
