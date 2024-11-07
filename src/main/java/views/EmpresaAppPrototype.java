@@ -11,9 +11,8 @@ public class EmpresaAppPrototype {
     System.out.println("---------------------------------------------\n");
     
     EmpleadoService empleadoService = new EmpleadoService();
-    Empleado ana = new Empleado("12345678-9", "Ana Banana");
-
-    empleadoService.nuevoEmpleado(ana);
+    
+    empleadoService.nuevoEmpleado(new Empleado("12345678-9", "Ana Banana"));
     listarServicios(empleadoService.listarEmpleados());
 
   }

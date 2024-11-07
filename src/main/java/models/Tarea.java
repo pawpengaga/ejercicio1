@@ -3,12 +3,12 @@ package models;
 public class Tarea {
 
   // Segunda clase, tiene un empleado asignado y es eliminada de la lista una vez completada
-
   private long codTarea;
   private String descripcionTarea;
+  private boolean estaFinalizada;
+
   private Empleado empleadoAsignado;
   private Proyecto proyectoPerteneciente;
-  private boolean estaFinalizada;
 
 
   public Tarea(long codTarea, String descripcionTarea, Empleado empleadoAsignado, Proyecto proyectoPerteneciente) {

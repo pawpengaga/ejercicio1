@@ -37,7 +37,6 @@ public class ProyectoService implements IProyecto {
   @Override
   public Collection<Proyecto> listarProyectos() {
     return proyectos.values();
-
   }
 
   @Override
@@ -64,7 +63,6 @@ public class ProyectoService implements IProyecto {
     }
     
   }
-
 
 
 }
