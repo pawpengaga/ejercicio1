@@ -17,13 +17,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Proyectos</a>
+                <a class="nav-link active" href="/ejercicio1/ProyectoServlet">Proyectos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Empleados</a>
+                <a class="nav-link" href="/ejercicio1/EmpleadoServlet">Empleados</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tareas</a>
+                <a class="nav-link" href="/ejercicio1/TareasServlet">Tareas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Exportar</a>
